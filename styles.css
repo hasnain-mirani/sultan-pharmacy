@@ -1,0 +1,85 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2ecc71; /* Emerald Green */
+    color: #fff;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .logo span {
+    font-weight: bold;
+  }
+  
+  /* Navigation Styles */
+  .navbar {
+    position: relative;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .cta-button {
+    background-color: #f39c12; /* Soft Gold */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hamburger Styles */
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background-color: #2ecc71;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 200px;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
